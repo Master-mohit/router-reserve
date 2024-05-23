@@ -5,6 +5,8 @@ import User from './Components/User'
 import Nav from './Components/Nav'
 
 import { Route, Routes } from 'react-router-dom'
+import Not from './Components/Not'
+import Mainroutes from './Components/Mainroutes'
 
 const App = () => {
   return (
@@ -12,14 +14,9 @@ const App = () => {
        <Home/> 
        <About/> 
        <User/>
-
+       <Not/>
        <Nav/> 
-
-       <Routes>
-       <Route path='/home' element={<Home/>} />
-           <Route path='/bout' element={<About/>} />
-           <Route path='/user' element={<User/>} />
-       </Routes>
+   <Mainroutes/>
     </div>
   )
 }
